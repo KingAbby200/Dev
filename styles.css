@@ -1,0 +1,177 @@
+html{
+      
+      font-family: inter;
+      font-size: 120%;
+      
+}
+#links{
+      margin-right: 15%;
+      margin-top: 3%;
+}
+a{
+      text-decoration: none;
+      font-family: sans-serif;
+}
+a, a:visited{
+      color: #48B39C;
+}
+
+#links a:not(:last-child){
+      margin-right: 20px;
+}
+
+body{
+     display: grid; 
+     grid-template-columns: 1fr;
+     grid-template-rows: auto 1fr 0.3fr;
+     grid-template-areas: "header"
+                          "main"
+                          "footer";
+     margin: 0px;
+     
+}
+
+header{
+   grid-area: header;  
+   background: #6affe01b; 
+   background-image: url('images/land.svg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 250px;
+}
+#avatar{
+      margin-left: 20%;
+      margin-top: 3%;
+}
+
+main{
+    grid-area: main; 
+  /*  background: lightcyan; */
+  margin-top: 10%;
+    
+}
+
+      
+
+main #avatar1{
+    margin-left: 40%;
+}
+main #avatar2{
+      margin-left: 10%;
+}
+main #avatar3{
+      margin-left: 70%;
+}
+
+footer{
+   grid-area: footer;  
+  background: #6affe01b;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20%;
+  position: relative;
+}
+
+#h1, #h3, #h4, #h6{
+     font-weight: bold; 
+     color: #48B39C;
+     font-family: cursive; 
+     text-align: center;
+     font-size: 150%;
+}
+#h2, #h5{
+      font-weight: bolder;
+      font-size: 250%;
+      color: #48B39C;
+      font-family: cursive; 
+      text-align: center;
+}
+#p1, #p2, #p3, #p4{
+      margin-left: 20%;
+      text-align: center;
+      max-width: 70%;
+      font-family: inter;
+}
+
+#button{
+      padding-left: 20%;
+      padding-right: 20%;
+      margin-left: 25%;       
+      background-color: #57d1b7d4;
+      border-color: #57d1b7d4;
+}
+
+#fb{
+ /*   margin-left: 50%;  
+    margin-top: 10%; */
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+#twitter{
+  /*  margin-right: 60%;  
+    margin-top: 10%; */
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+#ig{
+    /*  margin-right: 60%;
+      margin-top: 10%;   */  
+      position: absolute;
+    right: 25%;
+    top: 10%;
+}
+
+#copy{
+      margin-top: 20%;
+      position: absolute;
+      right: 35%;
+}
+    
+@media (300px <= width <= 699px){
+      main #avatar3{
+      margin-left: 55%;
+      
+     
+}
+#links{
+      margin-right: 7%;
+      margin-top: 3%;
+}
+
+#links a:not(:last-child){
+      margin-right: 10px;
+}
+#button{
+      margin-left: 15%;
+}
+#copy{
+      margin-left: 70%;
+   /*   white-space: nowrap; */
+}
+}
+
+@media (0px <= width <= 349px){
+      #links{
+      white-space: nowrap;
+      margin-right: 5%;
+      margin-top: 3%;
+}
+
+#links a:not(:last-child){
+      margin-right: 0px;
+}
+
+}
+
+
+
+@media (800px <= width <= 830px){
+      header{
+            padding-bottom: -10%;
+            background-size: 100% 100%;
+      }
+}
